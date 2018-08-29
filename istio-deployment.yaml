@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-callme
+  labels:
+    app: callme
+    version : v1
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: callme
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: callme
+        version : v1
+    spec:
+      containers:
+      - name: spring-boot-callme
+        image: urvishparikh/spring-boot-callme
+        ports:
+        - containerPort: 8081
