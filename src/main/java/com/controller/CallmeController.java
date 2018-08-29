@@ -13,7 +13,7 @@ public class CallmeController {
 
     private static String name = "call-me";
 
-    private static String version = "v1";
+    private static String version = "v2";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CallmeController.class);
 

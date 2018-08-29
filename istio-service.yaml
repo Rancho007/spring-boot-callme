@@ -13,7 +13,6 @@ spec:
     # Loadbalance traffic across Pods matching
     # this label selector
     app: callme
-    version : v1
   # Create an HA proxy in the cloud provider
   # with an External IP address - *Only supported
   # by some cloud providers*

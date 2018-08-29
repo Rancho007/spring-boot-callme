@@ -6,7 +6,7 @@ spec:
   hosts:
   - "*"
   gateways:
-  - boot-gateway
+  - gateway
   http:
   - match:
     - uri:
